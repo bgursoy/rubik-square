@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ReferenceRect.gd" type="Script" id=2]
+
+[node name="GameGrid" type="Node2D"]
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+margin_right = 64.0
+margin_bottom = 64.0
+border_color = Color( 0, 0, 0, 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
