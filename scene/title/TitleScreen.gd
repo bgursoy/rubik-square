@@ -9,7 +9,3 @@ func _process(delta):
 	$Yellow.rotate(deg2rad(2))
 	$Green.rotate(deg2rad(3))
 	$Blue.rotate(deg2rad(4))
-
-
-func _on_Play_Button_pressed():
-	get_tree().change_scene("res://GameGrid.tscn")

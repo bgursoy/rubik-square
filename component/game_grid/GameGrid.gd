@@ -2,9 +2,10 @@ extends ReferenceRect
 
 const SQUARE_SIZE = 6
 const SCALE = 0.5
-var RubikCell = preload("res://RubikCell.gd")
-var texture = preload("res://assets/blue.png")
+var RubikCell = preload("res://component/rubik_cell/RubikCell.gd")
 
+func _init():
+	pass
 
 func _ready():
 	# Add squares to the scene

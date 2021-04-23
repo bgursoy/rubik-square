@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/white.svg-db0577aa41b85f6f901f96d07497a5e0.stex"
+path="res://.import/white.svg-39cf347aa7414eb2a0f12a1f04ce8107.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/white.svg"
-dest_files=[ "res://.import/white.svg-db0577aa41b85f6f901f96d07497a5e0.stex" ]
+source_file="res://assets/texture/white.svg"
+dest_files=[ "res://.import/white.svg-39cf347aa7414eb2a0f12a1f04ce8107.stex" ]
 
 [params]
 
