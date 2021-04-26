@@ -16,12 +16,3 @@ func _init(color):
 		self.texture = preload("res://assets/texture/white.svg")
 	else:
 		self.texture = preload("res://assets/texture/yellow.svg")
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-#func _process(delta):
-#	pass
