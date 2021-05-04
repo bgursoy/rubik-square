@@ -19,10 +19,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
-func _on_gameGridContainer_mouse_entered():
-	self._gameGrid.on_drag()
-
-
-func _on_gameGridContainer_resized():
-	print($VBoxContainer/gameGridContainer.get_rect())
+func _on_gameGridContainer_gui_input(event):
+	if event is InputEventScreenDrag:
+		self._gameGrid.on_drag(event)
