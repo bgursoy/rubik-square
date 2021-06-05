@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scene/game/GameScene.gd" type="Script" id=1]
 [ext_resource path="res://assets/font/RubikMonoOne-Regular.ttf" type="DynamicFontData" id=2]
@@ -94,6 +94,17 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 1, 1, 1, 0.8 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="Theme" id=12]
+Panel/styles/panel = SubResource( 11 )
 
 [node name="gameContainer" type="Container"]
 anchor_right = 1.0
@@ -238,5 +249,5 @@ anchor_right = 1.0
 margin_top = 152.0
 margin_bottom = 152.0
 rect_clip_content = true
+theme = SubResource( 12 )
 [connection signal="gui_input" from="VBoxContainer/gameGridContainer" to="." method="_on_gameGridContainer_gui_input"]
-[connection signal="mouse_entered" from="VBoxContainer/gameGridContainer" to="." method="_on_gameGridContainer_mouse_entered"]

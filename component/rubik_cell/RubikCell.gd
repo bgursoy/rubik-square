@@ -16,3 +16,6 @@ func _init(color):
 		self.texture = preload("res://assets/texture/white.svg")
 	else:
 		self.texture = preload("res://assets/texture/yellow.svg")
+
+func get_color():
+	return self.color
