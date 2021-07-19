@@ -11,7 +11,7 @@ var cell_scale = 1.0
 var rubic_cell_map = [] 
 
 # Event tracking variables
-var touch_event_direction;
+var touch_event_direction
 var touch_event_index = -1
 var touch_event_target = null
 
@@ -75,49 +75,53 @@ func on_drag(event):
 	slide_row(event, self.touch_event_target.x, relative.x)
 	
 func on_drag_release(event):
-	# When user releases the drag event, rebalance gameboard
-	print("User release dragging:" + event.as_text())
-	
-	# Horizontal, balance row
-	var row = self.touch_event_target.x
-	var target_row = self.rubic_cell_map[row]
-	
-	# Calculate grid misplacement according to the first element
-	var one_cell_width = self.cell_scale * self.CELL_SPRITE_WIDTH
-	var cell_center = one_cell_width / 2
-	
-	var target_position =  target_row[0].position.x
-	var pivot_position = target_position - cell_center
-	
-	var pivot_element_off_screen = target_row[0].position.x - cell_center
-	print(pivot_element_off_screen)
-	
-	var difference = 0
-	if self.touch_event_direction == "left" || len(target_row) == self.square_width:
-		difference = pivot_element_off_screen
-	elif self.touch_event_direction == "right" && len(target_row) > self.square_width:
-		difference = pivot_element_off_screen + one_cell_width
-		
-	print("Misplacement: " + str(difference))
-	
-	if abs(difference) < cell_center:
-		# Not misplaced more than half of the distance. Return to the initial position
-		self.slide_row(event, row, -1 * difference);
-		print("Move: " + str(-1 * difference))
-		pass
+	# When user just touch, return 
+	if self.touch_event_target == null:
+		return
 	else:
-		# Calculate del_x
-		var del_x = (0)
-		if difference < 0: del_x = (one_cell_width - abs(difference)) * -1
-		else: del_x = one_cell_width - difference
-		self.slide_row(event, row, del_x)
-		print("Mpve: " + str(del_x))
-		pass
+		# When user releases the drag event, rebalance gameboard
+		print("User release dragging:" + event.as_text())
 		
-	self.touch_event_index = -1
-	self.touch_event_target = null
-	self.touch_event_direction = null
-	pass
+		# Horizontal, balance row
+		var row = self.touch_event_target.x
+		var target_row = self.rubic_cell_map[row]
+		
+		# Calculate grid misplacement according to the first element
+		var one_cell_width = self.cell_scale * self.CELL_SPRITE_WIDTH
+		var cell_center = one_cell_width / 2
+		
+		var target_position =  target_row[0].position.x
+		var pivot_position = target_position - cell_center
+		
+		var pivot_element_off_screen = target_row[0].position.x - cell_center
+		print(pivot_element_off_screen)
+		
+		var difference = 0
+		if self.touch_event_direction == "left" || len(target_row) == self.square_width:
+			difference = pivot_element_off_screen
+		elif self.touch_event_direction == "right" && len(target_row) > self.square_width:
+			difference = pivot_element_off_screen + one_cell_width
+			
+		print("Misplacement: " + str(difference))
+		
+		if abs(difference) < cell_center:
+			# Not misplaced more than half of the distance. Return to the initial position
+			self.slide_row(event, row, -1 * difference);
+			print("Move: " + str(-1 * difference))
+			pass
+		else:
+			# Calculate del_x
+			var del_x = (0)
+			if difference < 0: del_x = (one_cell_width - abs(difference)) * -1
+			else: del_x = one_cell_width - difference
+			self.slide_row(event, row, del_x)
+			print("Mpve: " + str(del_x))
+			pass
+			
+		self.touch_event_index = -1
+		self.touch_event_target = null
+		self.touch_event_direction = null
+		pass
 
 func slide_row(event, row, del_x):
 	var target_row = self.rubic_cell_map[row]
