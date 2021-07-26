@@ -9,7 +9,8 @@ func _ready():
 	pass 
 
 func _on_3x3Button_pressed():
-	self._gameScene = GameScene.new(3)
+	#self._gameScene = GameScene.new(3)
+	get_tree().change_scene("res://scene/game/GameScene.tscn")
 
 func _on_4x4Button_pressed():
 	self._gameScene = GameScene.new(4)
