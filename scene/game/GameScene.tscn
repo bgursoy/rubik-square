@@ -244,10 +244,10 @@ margin_top = 8.0
 margin_right = 74.0
 margin_bottom = 74.0
 
-[node name="gameGridContainer" type="GridContainer" parent="VBoxContainer"]
+[node name="gameGridContainer" type="CenterContainer" parent="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 margin_top = 152.0
-margin_right = 272.0
-margin_bottom = 152.0
 rect_clip_content = true
 theme = SubResource( 11 )
 [connection signal="gui_input" from="VBoxContainer/gameGridContainer" to="." method="_on_gameGridContainer_gui_input"]

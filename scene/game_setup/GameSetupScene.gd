@@ -1,31 +1,38 @@
 extends Container
 
 # Import game grid
-var GameScene = preload("res://scene/game/GameScene.gd")
 
+var _gameGridCont
 var _gameScene
-
-func _ready():
-	pass 
+var _boardSize
+var size
 
 func _on_3x3Button_pressed():
-	#self._gameScene = GameScene.new(3)
-	get_tree().change_scene("res://scene/game/GameScene.tscn")
+	Global.boardSize = 3
+	_size_of_board(Global.boardSize)
 
 func _on_4x4Button_pressed():
-	self._gameScene = GameScene.new(4)
+	Global.boardSize = 4
+	_size_of_board(Global.boardSize)
 
 func _on_5x5Button_pressed():
-	self._gameScene = GameScene.new(5)
+	Global.boardSize = 5
+	_size_of_board(Global.boardSize)
 
 func _on_6x6Button_pressed():
-	self._gameScene = GameScene.new(6)
+	Global.boardSize = 6
+	_size_of_board(Global.boardSize)
 
 func _on_7x7Button_pressed():
-	self._gameScene = GameScene.new(7)
+	Global.boardSize = 7
+	_size_of_board(Global.boardSize)
 
 func _on_8x8Button_pressed():
-	self._gameScene = GameScene.new(8)
+	Global.boardSize = 8
+	_size_of_board(Global.boardSize)
+
+func _size_of_board(size):
+	get_tree().change_scene("res://scene/game/GameScene.tscn")
 
 func _on_backButton_pressed():
 	get_tree().change_scene("res://scene/title/TitleScreen.tscn")

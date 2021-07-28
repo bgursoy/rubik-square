@@ -24,6 +24,12 @@ config/name="Rs"
 run/main_scene="res://scene/title/TitleScreen.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameSetupScene="res://scene/game_setup/GameSetupScene.gd"
+BoardSize="res://component/game_grid/BoardSize.gd"
+Global="*res://global.gd"
+
 [display]
 
 window/size/width=300
