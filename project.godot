@@ -22,12 +22,10 @@ _global_script_class_icons={
 
 config/name="Rs"
 run/main_scene="res://scene/title/TitleScreen.tscn"
-config/icon="res://icon.png"
+boot_splash/bg_color=Color( 0.301961, 0.301961, 0.301961, 1 )
 
 [autoload]
 
-GameSetupScene="res://scene/game_setup/GameSetupScene.gd"
-BoardSize="res://component/game_grid/BoardSize.gd"
 Global="*res://global.gd"
 
 [display]

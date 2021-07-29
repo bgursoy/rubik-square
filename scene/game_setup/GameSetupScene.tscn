@@ -1,9 +1,15 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/style/rubik_btn_red.tres" type="StyleBox" id=1]
 [ext_resource path="res://assets/font/RubikMonoOne-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://assets/style/background.tres" type="StyleBox" id=3]
 [ext_resource path="res://scene/game_setup/GameSetupScene.gd" type="Script" id=4]
+[ext_resource path="res://assets/style/btn_yellow.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/style/btn_green.tres" type="StyleBox" id=6]
+[ext_resource path="res://assets/style/btn_red.tres" type="StyleBox" id=7]
+[ext_resource path="res://assets/style/btn_purple.tres" type="StyleBox" id=8]
+[ext_resource path="res://assets/style/btn_orange.tres" type="StyleBox" id=9]
+[ext_resource path="res://assets/style/btn_blue.tres" type="StyleBox" id=10]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://assets/font/RubikMonoOne-Regular.ttf"
@@ -13,121 +19,121 @@ size = 24
 font_data = SubResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.0470588, 0.67451, 0.0470588, 1 )
+bg_color = Color( 0.129412, 0.588235, 0.32549, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0, 0, 0, 1 )
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 8.0
-expand_margin_right = 8.0
-expand_margin_top = 16.0
-expand_margin_bottom = 16.0
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
 
 [sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=5]
-bg_color = Color( 1, 0, 0, 1 )
+bg_color = Color( 0.921569, 0.341176, 0.341176, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0, 0, 0, 1 )
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 8.0
-expand_margin_right = 8.0
-expand_margin_top = 16.0
-expand_margin_bottom = 16.0
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
 
 [sub_resource type="DynamicFont" id=6]
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 0, 0, 1, 1 )
+bg_color = Color( 0.184314, 0.501961, 0.929412, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0, 0, 0, 1 )
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 8.0
-expand_margin_right = 8.0
-expand_margin_top = 16.0
-expand_margin_bottom = 16.0
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
 
 [sub_resource type="DynamicFont" id=8]
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=9]
-bg_color = Color( 1, 0, 1, 1 )
+bg_color = Color( 0.607843, 0.317647, 0.878431, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0, 0, 0, 1 )
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 8.0
-expand_margin_right = 8.0
-expand_margin_top = 16.0
-expand_margin_bottom = 16.0
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
 
 [sub_resource type="DynamicFont" id=10]
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=11]
-bg_color = Color( 1, 1, 0, 1 )
+bg_color = Color( 0.94902, 0.6, 0.290196, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0, 0, 0, 1 )
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 8.0
-expand_margin_right = 8.0
-expand_margin_top = 16.0
-expand_margin_bottom = 16.0
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
 
 [sub_resource type="DynamicFont" id=12]
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=13]
-bg_color = Color( 1, 0.607843, 0, 1 )
+bg_color = Color( 0.94902, 0.788235, 0.298039, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0, 0, 0, 1 )
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 8.0
-expand_margin_right = 8.0
-expand_margin_top = 16.0
-expand_margin_bottom = 16.0
+expand_margin_left = 7.0
+expand_margin_right = 7.0
+expand_margin_top = 7.0
+expand_margin_bottom = 7.0
 
 [sub_resource type="DynamicFont" id=14]
 font_data = ExtResource( 2 )
@@ -138,7 +144,7 @@ border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color( 0.192157, 0.160784, 0.160784, 1 )
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -175,15 +181,22 @@ grow_horizontal = 2
 grow_vertical = 2
 custom_styles/panel = ExtResource( 3 )
 
-[node name="titleContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.06
-anchor_top = 0.05
-anchor_right = 0.94
-anchor_bottom = 0.05
-alignment = 1
+[node name="Control" type="Control" parent="backgroundContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 10.0
+margin_bottom = -5.0
 
-[node name="Label" type="Label" parent="titleContainer"]
-margin_right = 264.0
+[node name="titleContainer" type="VBoxContainer" parent="backgroundContainer/Control"]
+anchor_right = 1.0
+margin_top = 16.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="backgroundContainer/Control/titleContainer"]
+margin_right = 300.0
 margin_bottom = 31.0
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.301961, 0.301961, 0.301961, 1 )
@@ -193,84 +206,122 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="setupMarginContainer" type="MarginContainer" parent="."]
-anchor_left = 0.15
-anchor_top = 0.17
-anchor_right = 0.94
-anchor_bottom = 0.8
-custom_constants/margin_left = 6
-
-[node name="GridContainer" type="GridContainer" parent="setupMarginContainer"]
-margin_left = 6.0
-margin_right = 237.0
-margin_bottom = 359.0
-custom_constants/vseparation = 55
-custom_constants/hseparation = 40
+[node name="GridContainer" type="GridContainer" parent="backgroundContainer/Control"]
+anchor_top = 0.13
+anchor_right = 1.0
+anchor_bottom = 0.836
+custom_constants/vseparation = 30
+custom_constants/hseparation = 30
 columns = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="3x3Button" type="Button" parent="setupMarginContainer/GridContainer"]
+[node name="3x3Button" type="Button" parent="backgroundContainer/Control/GridContainer"]
 margin_right = 50.0
-margin_bottom = 28.0
-custom_styles/normal = SubResource( 3 )
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/normal = ExtResource( 6 )
 custom_fonts/font = SubResource( 4 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "3x3"
 
-[node name="4x4Button" type="Button" parent="setupMarginContainer/GridContainer"]
-margin_left = 90.0
-margin_right = 140.0
-margin_bottom = 28.0
-custom_styles/normal = SubResource( 5 )
+[node name="4x4Button" type="Button" parent="backgroundContainer/Control/GridContainer"]
+margin_left = 80.0
+margin_right = 130.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 7 )
 custom_fonts/font = SubResource( 6 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "4X4"
 
-[node name="5x5Button" type="Button" parent="setupMarginContainer/GridContainer"]
-margin_left = 180.0
-margin_right = 230.0
-margin_bottom = 28.0
-custom_styles/normal = SubResource( 7 )
+[node name="5x5Button" type="Button" parent="backgroundContainer/Control/GridContainer"]
+margin_left = 160.0
+margin_right = 210.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = ExtResource( 10 )
+custom_styles/normal = ExtResource( 10 )
 custom_fonts/font = SubResource( 8 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "5X5"
 
-[node name="6x6Button" type="Button" parent="setupMarginContainer/GridContainer"]
-margin_top = 83.0
+[node name="6x6Button" type="Button" parent="backgroundContainer/Control/GridContainer"]
+margin_top = 80.0
 margin_right = 50.0
-margin_bottom = 111.0
-custom_styles/normal = SubResource( 9 )
+margin_bottom = 130.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = ExtResource( 8 )
+custom_styles/normal = ExtResource( 8 )
 custom_fonts/font = SubResource( 10 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "6X6"
 
-[node name="7x7Button" type="Button" parent="setupMarginContainer/GridContainer"]
-margin_left = 90.0
-margin_top = 83.0
-margin_right = 140.0
-margin_bottom = 111.0
-custom_styles/normal = SubResource( 11 )
+[node name="7x7Button" type="Button" parent="backgroundContainer/Control/GridContainer"]
+margin_left = 80.0
+margin_top = 80.0
+margin_right = 130.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
 custom_fonts/font = SubResource( 12 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "7X7"
 
-[node name="8x8Button" type="Button" parent="setupMarginContainer/GridContainer"]
-margin_left = 180.0
-margin_top = 83.0
-margin_right = 230.0
-margin_bottom = 111.0
-custom_styles/normal = SubResource( 13 )
+[node name="8x8Button" type="Button" parent="backgroundContainer/Control/GridContainer"]
+margin_left = 160.0
+margin_top = 80.0
+margin_right = 210.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/normal = ExtResource( 5 )
 custom_fonts/font = SubResource( 14 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "8X8"
 
-[node name="buttonContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.06
-anchor_top = 0.88
-anchor_right = 0.94
-anchor_bottom = 1.0
-alignment = 1
+[node name="buttonContainer" type="VBoxContainer" parent="backgroundContainer/Control"]
+anchor_top = 0.9
+anchor_right = 1.0
+anchor_bottom = 0.9
+margin_left = 10.0
+margin_right = -10.0
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="backButton" type="Button" parent="buttonContainer"]
-margin_top = 14.0
-margin_right = 264.0
-margin_bottom = 53.0
+[node name="backButton" type="Button" parent="backgroundContainer/Control/buttonContainer"]
+margin_right = 280.0
+margin_bottom = 39.0
 custom_styles/hover = ExtResource( 1 )
 custom_styles/pressed = ExtResource( 1 )
 custom_styles/normal = SubResource( 15 )
@@ -280,10 +331,10 @@ custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
 custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 text = "BACK"
-[connection signal="pressed" from="setupMarginContainer/GridContainer/3x3Button" to="." method="_on_3x3Button_pressed"]
-[connection signal="pressed" from="setupMarginContainer/GridContainer/4x4Button" to="." method="_on_4x4Button_pressed"]
-[connection signal="pressed" from="setupMarginContainer/GridContainer/5x5Button" to="." method="_on_5x5Button_pressed"]
-[connection signal="pressed" from="setupMarginContainer/GridContainer/6x6Button" to="." method="_on_6x6Button_pressed"]
-[connection signal="pressed" from="setupMarginContainer/GridContainer/7x7Button" to="." method="_on_7x7Button_pressed"]
-[connection signal="pressed" from="setupMarginContainer/GridContainer/8x8Button" to="." method="_on_8x8Button_pressed"]
-[connection signal="pressed" from="buttonContainer/backButton" to="." method="_on_backButton_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/GridContainer/3x3Button" to="." method="_on_3x3Button_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/GridContainer/4x4Button" to="." method="_on_4x4Button_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/GridContainer/5x5Button" to="." method="_on_5x5Button_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/GridContainer/6x6Button" to="." method="_on_6x6Button_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/GridContainer/7x7Button" to="." method="_on_7x7Button_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/GridContainer/8x8Button" to="." method="_on_8x8Button_pressed"]
+[connection signal="pressed" from="backgroundContainer/Control/buttonContainer/backButton" to="." method="_on_backButton_pressed"]

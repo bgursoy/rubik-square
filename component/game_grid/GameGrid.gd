@@ -25,7 +25,6 @@ func _init(dim, square_width, num_colors):
 	self.cell_scale = dim / (CELL_SPRITE_WIDTH * square_width)
 	print("Render game grid into " + str(dim) + " pixels.")
 	print("Scale computed for game grid: " + str(self.cell_scale))
-	_ready()
 
 func _ready():
 	print("Game board ready")
