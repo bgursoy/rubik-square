@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/style/background.tres" type="StyleBox" id=1]
 [ext_resource path="res://assets/style/rubik_btn_red.tres" type="StyleBox" id=2]
@@ -9,7 +9,13 @@
 size = 24
 font_data = ExtResource( 3 )
 
-[sub_resource type="StyleBoxFlat" id=2]
+[sub_resource type="StyleBoxEmpty" id=2]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.921569, 0.341176, 0.341176, 1 )
 border_width_left = 4
 border_width_top = 4
@@ -25,7 +31,7 @@ expand_margin_top = 8.0
 expand_margin_bottom = 8.0
 anti_aliasing = false
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 24
 font_data = ExtResource( 3 )
 
@@ -57,6 +63,7 @@ margin_bottom = -5.0
 [node name="titleContainer" type="VBoxContainer" parent="backgroundContainer/Control"]
 anchor_right = 1.0
 margin_top = 16.0
+margin_bottom = 47.0
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -73,10 +80,22 @@ align = 1
 valign = 1
 uppercase = true
 
-[node name="GridContainer" type="GridContainer" parent="backgroundContainer/Control"]
+[node name="ScrollContainer" type="ScrollContainer" parent="backgroundContainer/Control"]
 anchor_top = 0.13
 anchor_right = 1.0
 anchor_bottom = 0.836
+margin_left = 20.0
+margin_top = -10.0
+margin_right = -10.0
+custom_styles/bg = SubResource( 2 )
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="backgroundContainer/Control/ScrollContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 columns = 3
 __meta__ = {
 "_edit_use_anchors_": false
@@ -98,6 +117,7 @@ margin_right = 280.0
 margin_bottom = 39.0
 custom_styles/hover = ExtResource( 2 )
 custom_styles/pressed = ExtResource( 2 )
-custom_styles/normal = SubResource( 2 )
-custom_fonts/font = SubResource( 3 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Back"
+[connection signal="pressed" from="backgroundContainer/Control/buttonContainer/backButton" to="." method="_on_backButton_pressed"]

@@ -5,12 +5,16 @@
 [ext_resource path="res://assets/texture/blue.svg" type="Texture" id=3]
 [ext_resource path="res://assets/texture/yellow.svg" type="Texture" id=4]
 [ext_resource path="res://assets/style/rubik_btn_green.tres" type="StyleBox" id=5]
-[ext_resource path="res://assets/style/title.tres" type="DynamicFont" id=6]
 [ext_resource path="res://assets/style/rubik_btn_red.tres" type="StyleBox" id=7]
 [ext_resource path="res://scene/title/TitleScreen.gd" type="Script" id=8]
 [ext_resource path="res://assets/font/RubikMonoOne-Regular.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://assets/style/rubik_btn_blue.tres" type="StyleBox" id=10]
 [ext_resource path="res://assets/style/background.tres" type="StyleBox" id=11]
+
+[sub_resource type="DynamicFont" id=8]
+size = 50
+extra_spacing_char = 7
+font_data = ExtResource( 9 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -116,7 +120,7 @@ __meta__ = {
 [node name="Label" type="Label" parent="titleContainer"]
 margin_right = 246.0
 margin_bottom = 63.0
-custom_fonts/font = ExtResource( 6 )
+custom_fonts/font = SubResource( 8 )
 custom_colors/font_color = Color( 0.301961, 0.301961, 0.301961, 1 )
 custom_colors/font_outline_modulate = Color( 0.301961, 0.301961, 0.301961, 1 )
 text = "RUBIK"

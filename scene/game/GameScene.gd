@@ -44,4 +44,5 @@ func _on_gameGridContainer_gui_input(event):
 			self._gameGrid.on_drag_release(event)
 
 func _on_HelpButton_pressed():
+	Global.lvl_btn_colors = []
 	get_tree().change_scene("res://scene/title/TitleScreen.tscn")

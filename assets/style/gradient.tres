@@ -1,0 +1,7 @@
+[gd_resource type="Gradient" load_steps=2 format=2]
+
+[ext_resource path="res://Gradient.gd" type="Script" id=1]
+
+[resource]
+colors = PoolColorArray( 0.184314, 0.501961, 0.929412, 1, 0.607843, 0.317647, 0.878431, 1 )
+script = ExtResource( 1 )

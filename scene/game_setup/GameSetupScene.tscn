@@ -19,7 +19,7 @@ size = 24
 font_data = SubResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0.129412, 0.588235, 0.32549, 1 )
+bg_color = Color( 0.94902, 0.788235, 0.298039, 1 )
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
@@ -30,10 +30,10 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 7.0
-expand_margin_right = 7.0
-expand_margin_top = 7.0
-expand_margin_bottom = 7.0
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
 
 [sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 2 )
@@ -50,10 +50,10 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 7.0
-expand_margin_right = 7.0
-expand_margin_top = 7.0
-expand_margin_bottom = 7.0
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
 
 [sub_resource type="DynamicFont" id=6]
 font_data = ExtResource( 2 )
@@ -70,15 +70,35 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 7.0
-expand_margin_right = 7.0
-expand_margin_top = 7.0
-expand_margin_bottom = 7.0
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
 
 [sub_resource type="DynamicFont" id=8]
 font_data = ExtResource( 2 )
 
 [sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.129412, 0.588235, 0.32549, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 16
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=11]
 bg_color = Color( 0.607843, 0.317647, 0.878431, 1 )
 border_width_left = 4
 border_width_top = 4
@@ -90,15 +110,15 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 7.0
-expand_margin_right = 7.0
-expand_margin_top = 7.0
-expand_margin_bottom = 7.0
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
 
-[sub_resource type="DynamicFont" id=10]
+[sub_resource type="DynamicFont" id=12]
 font_data = ExtResource( 2 )
 
-[sub_resource type="StyleBoxFlat" id=11]
+[sub_resource type="StyleBoxFlat" id=13]
 bg_color = Color( 0.94902, 0.6, 0.290196, 1 )
 border_width_left = 4
 border_width_top = 4
@@ -110,30 +130,10 @@ corner_radius_top_right = 6
 corner_radius_bottom_right = 6
 corner_radius_bottom_left = 6
 corner_detail = 16
-expand_margin_left = 7.0
-expand_margin_right = 7.0
-expand_margin_top = 7.0
-expand_margin_bottom = 7.0
-
-[sub_resource type="DynamicFont" id=12]
-font_data = ExtResource( 2 )
-
-[sub_resource type="StyleBoxFlat" id=13]
-bg_color = Color( 0.94902, 0.788235, 0.298039, 1 )
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color( 0.301961, 0.301961, 0.301961, 1 )
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-corner_detail = 16
-expand_margin_left = 7.0
-expand_margin_right = 7.0
-expand_margin_top = 7.0
-expand_margin_bottom = 7.0
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
 
 [sub_resource type="DynamicFont" id=14]
 font_data = ExtResource( 2 )
@@ -222,8 +222,8 @@ margin_right = 50.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 50, 50 )
 custom_styles/hover = SubResource( 3 )
-custom_styles/pressed = ExtResource( 6 )
-custom_styles/normal = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/normal = ExtResource( 5 )
 custom_fonts/font = SubResource( 4 )
 custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -267,8 +267,8 @@ margin_right = 50.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 50, 50 )
 custom_styles/hover = SubResource( 9 )
-custom_styles/pressed = ExtResource( 8 )
-custom_styles/normal = ExtResource( 8 )
+custom_styles/pressed = ExtResource( 6 )
+custom_styles/normal = ExtResource( 6 )
 custom_fonts/font = SubResource( 10 )
 custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -283,8 +283,8 @@ margin_right = 130.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 50, 50 )
 custom_styles/hover = SubResource( 11 )
-custom_styles/pressed = ExtResource( 9 )
-custom_styles/normal = ExtResource( 9 )
+custom_styles/pressed = ExtResource( 8 )
+custom_styles/normal = ExtResource( 8 )
 custom_fonts/font = SubResource( 12 )
 custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -299,8 +299,8 @@ margin_right = 210.0
 margin_bottom = 130.0
 rect_min_size = Vector2( 50, 50 )
 custom_styles/hover = SubResource( 13 )
-custom_styles/pressed = ExtResource( 5 )
-custom_styles/normal = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/normal = ExtResource( 9 )
 custom_fonts/font = SubResource( 14 )
 custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
